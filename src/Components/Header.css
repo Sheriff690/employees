@@ -6,10 +6,16 @@
 }
 #home{
     display: flex;
-    /* flex-direction: row; */
+    align-items: center;
 }
 
-.header{
+#home:hover{
+    background-color: #777;
+    transition: .3s ease-in-out;
+    color: #17cf97;
+}
+
+#header{
     background-color: #333;
     position: relative;
     top: 0;
@@ -23,15 +29,15 @@
     /* gap: 2rem; */
     padding: 0 1rem;
 }
-.header ul{
+#header ul{
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
 }
 
-.header a{
+#header a{
     color: inherit;
     font-size: 1.3rem;
     font-weight: 600;
@@ -47,37 +53,59 @@
     font-weight: 700;
 }
 
-.header li.active{
+#header li.active{
     background-color: #555;
 }
-.header li:hover, .site-title:hover{
+li:hover{
     /* background-color: #777; */
     transition: 0.3s ease-in-out;
     color: #17cf97;
 }
 
-.contRequests{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-}
+
 #mobile{
     display: none;
-}@media screen and (max-width:760px){
-    .navLinks{
+    /* border: 1px solid; */
+    border-radius: 50%;
+}
+#mobile #bars{
+    padding: 4px 6px;
+}
+#mobile:hover{
+    background-color: #777;
+    transition: .4s ease-in;
+}
+@media screen and (max-width:769px){
+    #navLinks{
         background-color: #333; /**Work on this.....!!!!...!!*/
-        position: relative;
+        position: fixed;
         top: 0;
         right: 0;
-        left: 0;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 300px;
+        top: 57px;
+        right: -300px;
+        height: 100vh;
+        transition: .3s ease-in-out;
+        background: #2a3239;
         color: white;
         /* gap: 2rem; */
-        padding: 0 1rem;
+        padding: 40px 0 0 10px;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, .5);
+
+    }
+    #navLinks.active{
+        right: 0px;
+    }
+    #mobile{
+        display: block;
+    }
+    #mobile i {
+        font-size: 22px;
+        cursor: pointer;
     }
 }
 

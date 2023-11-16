@@ -44,3 +44,9 @@ html{
     /* background-repeat: no-repeat; */
 }
 
+.contRequests{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
