@@ -1,0 +1,14 @@
+.contRequests a {
+    text-decoration: none;
+    padding: 8px 14px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: aqua;
+    color: black;
+}
+.contRequests a:hover{
+    background-color: #EEEEEE;
+    color: #FD7014;
+    transition: .3s ease;
+}

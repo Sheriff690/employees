@@ -1,0 +1,121 @@
+.homeContainer h3{
+    color: aqua;
+}
+.homeContainer strong{
+    color: yellowgreen;
+}
+#home{
+    display: flex;
+    align-items: center;
+}
+
+#home:hover{
+    background-color: #777;
+    transition: .3s ease-in-out;
+    color: #17cf97;
+}
+
+#header{
+    background-color: #333;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    /* gap: 2rem; */
+    padding: 0 1rem;
+}
+#header ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 3rem;
+}
+
+#header a{
+    color: inherit;
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: .25rem;
+    text-decoration: none;
+}
+
+.site-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#header li.active{
+    background-color: #555;
+}
+li:hover{
+    /* background-color: #777; */
+    transition: 0.3s ease-in-out;
+    color: #17cf97;
+}
+
+
+#mobile{
+    display: none;
+    /* border: 1px solid; */
+    border-radius: 50%;
+}
+#mobile #bars{
+    padding: 4px 6px;
+}
+#mobile:hover{
+    background-color: #777;
+    transition: .4s ease-in;
+}
+@media screen and (max-width:760px){
+    #navLinks{
+        background-color: #333; /**Work on this.....!!!!...!!*/
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 300px;
+        top: 57px;
+        right: -300px;
+        height: 100vh;
+        transition: .3s ease-in-out;
+        background: #2a3239;
+        color: white;
+        /* gap: 2rem; */
+        padding: 40px 0 0 10px;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, .5);
+
+    }
+    
+    #navLinks.active{
+        right: 0px;
+    }
+    #mobile{
+        display: block;
+    }
+    #mobile i {
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width:900px){
+    #header ul{
+        gap: .6rem;
+    }
+}
+
+/* #mobile i{
+    display: flex;
+    color: #fff;
+} */
