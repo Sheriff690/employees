@@ -15,14 +15,7 @@
     flex-direction: column;
     text-align: center;
 }
-.contRequests a {
-    text-decoration: none;
-    padding: 8px 24px;
-    font-size: 22px;
-    border-radius: 8px;
-    background-color: aqua;
-    color: black;
-}
+
 
 *{
     box-sizing: border-box;
